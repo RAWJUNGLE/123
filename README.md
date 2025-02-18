@@ -22,7 +22,7 @@ sudo make install
 sudo ln -s /usr/local/lib/libserialport.so.0.1.0 /usr/lib/libserialport.so.0.1.0
 sudo ln -s /usr/local/lib/libserialport.so.0 /usr/lib/libserialport.so.0
 
-cd/123/m8c
+cd /123/m8c
 make
 
 sudo nano /home/<username>/.local/share/m8c/config.ini
@@ -51,9 +51,9 @@ add script  /home/<username>/123/m8c/m8c
 ctrl+x, y, enter
 
 sudo chmod +x /etc/rc.local
-systemctl start rc-local
+sudo systemctl start rc-local
 
 enjoy! 
 
-known issue: 
-Audio not work on reboot console
+• known issue: 
+• Audio not work on reboot console
