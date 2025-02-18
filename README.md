@@ -57,7 +57,9 @@ sudo systemctl disable emulationstation
 sudo nano /etc/rc.local
 ```
 ```
-add script  /home/<username>/123/m8c/m8c
+add script  
+alsaloop -P hw:0,0 -C hw:1,0 -t 200000 -A 5 --rate 44100 --sync=0 -T -1 -d
+/home/<username>/123/m8c/m8c
 ctrl+x, y, enter
 ```
 ```
@@ -66,5 +68,3 @@ sudo systemctl start rc-local
 ```
 enjoy! 
 
-• known issue: 
-• Audio not work on reboot console
