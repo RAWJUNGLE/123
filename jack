@@ -1,0 +1,58 @@
+#!/bin/sh
+#
+# Startup script for Jack Daemon
+#
+# chkconfig: 2345 08 92
+# description: Sample jackd init.d script.
+# processname: jackd
+# pidfile: /var/run/jackd/jackd.pid
+# config: /etc/jackd.conf
+
+# Source function library.
+. /etc/rc.d/init.d/functions
+
+# Source networking configuration.
+. /etc/sysconfig/network
+
+[ -x /usr/sbin/jackd ] || exit 0
+
+# Local jackd config
+# test -f /etc/sysconfig/jackd && . /etc/sysconfig/jackd
+
+# See how we were called.
+case "$1" in
+  start)
+        echo -n "Starting Jack Daemon: "
+        daemon jackd
+        RETVAL=$?
+        echo
+        [ $RETVAL -eq 0 ] && touch /var/lock/subsys/jackd
+        ;;
+  stop)
+        echo -n "Stopping Jack Daemon: "
+        killproc jackd
+        rm -f /var/run/jackd/jackd.pid
+        RETVAL=$?
+        echo
+### heres the fix... we gotta remove the stale files on restart
+        [ $RETVAL -eq 0 ] && rm -f /var/lock/subsys/jackd
+        ;;
+  status)
+        status jackd
+        RETVAL=$?
+        ;;
+  restart|reload)
+        $0 stop
+        $0 start
+        RETVAL=$?
+        ;;
+  condrestart)
+        [ -e /var/lock/subsys/jackd ] && $0 restart
+        RETVAL=$?
+        ;;
+  *)
+        echo "Usage: jackd {start|stop|status|restart|reload|condrestart}"
+        exit 1
+esac
+
+exit $RETVAL
