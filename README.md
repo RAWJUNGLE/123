@@ -101,3 +101,5 @@ sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 Появтся задержка в работе, имейте ввиду. (There will be a delay in work, keep in mind.)
 
 
+Выйти обратно в консоль SELECT + R3 (кнопка на джойстике)
+Exit back to the console SELECT + R3  (button on the joystick)
