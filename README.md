@@ -73,7 +73,7 @@ cd /123/m8c/
 
 ENJOY 
 
-AUTOSTART M8 ONLY 
+AUTOSTART M8C ONLY (Автозапуск только M8C)
 ```
 sudo systemctl disable emulationstation
 sudo nano /etc/rc.local
@@ -89,4 +89,15 @@ sudo chmod +x /etc/rc.local
 sudo systemctl start rc-local
 ```
 enjoy! 
+
+
+Если вы хотите избавиться от треска (If you want to get rid of crackles)
+Добавьте строку в скрипт (Add a line to the script) rc.local 
+```
+sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+```
+до строки (before the line) alsaloop
+
+Появтся задержка в работе, имейте ввиду. (There will be a delay in work, keep in mind.)
+
 
