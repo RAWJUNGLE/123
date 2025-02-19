@@ -82,7 +82,6 @@ cd /123/m8c/
 ./m8c
 ```
 
-ENJOY 
 
 AUTOSTART M8C ONLY (Автозапуск только M8C)
 ```
@@ -99,8 +98,6 @@ ctrl+x, y, enter
 sudo chmod +x /etc/rc.local
 sudo systemctl start rc-local
 ```
-enjoy! 
-
 
 Если вы хотите избавиться от треска (If you want to get rid of crackles)
 Добавьте строку в скрипт (Add a line to the script) rc.local 
@@ -109,8 +106,20 @@ sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 ```
 до строки (before the line) alsaloop
 
+Выйти обратно в консоль SELECT + R3 (кнопка на джойстике)
+
+Exit back to the console SELECT + R3  (button on the joystick)
+
+r / select+start+opt+edit = перезагрузка дисплея, если появятся искажения 
+
+r / select+start+opt+edit = reset display (if glitches appear on the screen, use this)
+
 Появтся задержка в работе, имейте ввиду. (There will be a delay in work, keep in mind.)
 
+Еще нужно зайти в alsamixer, в консоли пишите просто alsamixer и проведите такие же настройки как на фото (навигация влево/вправо, вверх/вниз переключение, M - mute)
 
-Выйти обратно в консоль SELECT + R3 (кнопка на джойстике)
-Exit back to the console SELECT + R3  (button on the joystick)
+You also need to log in to alsamixer, just write alsamixer in the console and make the same settings as in the photo. (left/right navigation, up/down switching, M - mute)
+
+![alsamixer](https://github.com/RAWJUNGLE/123/blob/main/pic/photo_2025-02-20%2000.42.29.jpeg?raw=true)
+![alsamixer2](https://github.com/RAWJUNGLE/123/blob/main/pic/photo_2025-02-20%2000.42.31.jpeg?raw=true)
+
