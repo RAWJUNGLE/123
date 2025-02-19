@@ -1,4 +1,5 @@
 M8C для клонов игровых приставок Data Frog R36S (a.k.a. K36) [Подробнее о клонах](https://handhelds.miraheze.org/wiki/R36S_Clones)
+
 M8C for clones of video game consoles Data Frog R36S (a.k.a. K36) [Learn more about clones](https://handhelds.miraheze.org/wiki/R36S_Clones)
 
 Готовый образ для SD-карты объёмом 32GB доступен по ссылке -  [GOOGLE DRIVE](https://drive.google.com/file/d/1UfzRb_OIGDza3Qki4kZj9Egg8YcPl2uP/view?usp=drive_link)
