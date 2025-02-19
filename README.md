@@ -1,3 +1,11 @@
+M8C для клонов игровых приставок Data Frog R36S (a.k.a. K36)
+
+Готовый образ для SD-карты объёмом 32GB доступен по ссылке - ```https://drive.google.com/file/d/1UfzRb_OIGDza3Qki4kZj9Egg8YcPl2uP/view?usp=drive_link```
+A ready-made image for a 32GB SD card is available at the link - ```https://drive.google.com/file/d/1UfzRb_OIGDza3Qki4kZj9Egg8YcPl2uP/view?usp=drive_link```
+
+Есть проблемы со звуком и задержками, если вы знаете как исправить, напишите мне в issue.
+There are problems with sound and delays, if you know how to fix it, write to me in the issue.
+
 Ручная установка клиента M8C (Dirtywave M8) для клонов игровых консолей R36S (a.k.a K36). Да это клон, клона. 
 
 У вас должна быть установлена ArkOS_K36_v2.0_011182025
@@ -24,7 +32,6 @@ Password: ark (the password is not displayed in any way, enter it without errors
 Then manually fill in the commands that are shown below.
 
 
- 
 
 
 ```
