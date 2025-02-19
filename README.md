@@ -31,6 +31,7 @@ Then manually fill in the commands that are shown below.
 git clone https://github.com/RAWJUNGLE/123.git
 cd 123
 chmod 777 install_headers.sh 
+./install_headers.sh 
 git clone https://github.com/laamaa/m8c.git
 cd 
 ```
