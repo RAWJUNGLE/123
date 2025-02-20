@@ -29,7 +29,7 @@ You will need a wifi dongle, usb hub with additional power, keyboard (not RGB), 
 Connect it all to the K36. 
 Turn on K36, go to OPTIONS, turn on WIFI, after connecting, turn on Enable Remote Services.
 Next, go to the main menu and click START, then Quit, Quit Emulation Station
-You will be taken to the console, press ALT + F4 on the keyboard.
+You will be taken to the console, press ALT + F2 on the keyboard.
 Login: ark
 Password: ark (the password is not displayed in any way, enter it without errors) 
 Then manually fill in the commands that are shown below.
