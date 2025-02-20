@@ -16,7 +16,7 @@ There are problems with sound and delays, if you know how to fix it, write to me
 Подключите всё это к K36. 
 Включите K36, зайдите в пункт OPTIONS, включите WIFI, после подключения, включите Enable Remote Services.
 Далее выйдете в главное меню и нажмите START, далее Quit, Quit Emulation Station
-Вы попадёте в консоль, нажмите на клавиатуре ALT + F4
+Вы попадёте в консоль, нажмите на клавиатуре ALT + F2
 Login: ark
 Password: ark (пароль никак не отображается, вводите без ошибок) 
 Дальше вручную заполняйте комманды которые привидены ниже. 
